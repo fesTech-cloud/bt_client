@@ -26,7 +26,7 @@ export default function Home(){
        <div id={styles["mobile_banner"]}>
         <div className={styles["content"]}>
               <nav className={styles["mobile_nav"]}>
-                    <div><Image src="/image/logo2.jpg" alt="logo" width={50} height={50}/></div>
+                    <div><Image src="public/image/logo2.jpg" alt="logo" width={50} height={50}/></div>
                     <ul>
                          <li>Home</li>
                          <li>About</li>
@@ -35,7 +35,7 @@ export default function Home(){
               </nav>
 
               <div className={styles["banner_content"]}>
-                  <Image src="/image/img.jpg" alt="banner" sizes="100%" width={500} height={500}/>
+                  <Image src="puplic/image/img.jpg" alt="banner" sizes="100%" width={500} height={500}/>
                   
                   <div className={styles["main"]}>
                     <h3>
