@@ -1,3 +1,5 @@
+  @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
 #container{
   overflow: hidden;
   scroll-behavior: auto;
@@ -7,7 +9,7 @@
   width: 100%;
   height: 50%;
 }
-#content{
+#desktop_wrapper .content{
   top: 0;
   left: 0;
   right: 0;
@@ -25,11 +27,50 @@
   #desktop_banner{
     display: none;
   }
+  #desktop_wrapper .content{
+    display: none;
+  }
   #mobile_banner{
     display: block;
+    background-image: url("/image/img3.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 100vh;
+  
   }
-  #content{
-    display: none;
+
+  #mobile_banner .content{
+    background-color: rgba(7, 7, 48, 0.664);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100vh;
+    color: white;
+  }
+
+
+  #mobile_banner #desk_banner_img{
+    height: 100vh;
+  }
+
+  #mobile_banner .content h3{
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+    padding-top: 20rem;
+    margin-bottom: 0;
+  }
+  
+  #mobile_banner .content h3{
+    text-align: center;
+    color: green;
+    font-size: 28px;
+  }
+  #mobile_banner .content h2{
+    text-align: center;
+    color:orangered;
   }
 }
 
