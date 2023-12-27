@@ -1,4 +1,5 @@
   @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 #container{
   overflow: hidden;
@@ -32,46 +33,93 @@
   }
   #mobile_banner{
     display: block;
-    background-image: url("/image/img3.jpg");
-    background-repeat: no-repeat;
-    background-size:cover;
-    height: 100vh;
   
   }
 
-  #mobile_banner .content{
-    background-color: rgba(7, 7, 48, 0.664);
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 100%;
-    height: 100vh;
-    color: white;
-  }
+
+.mobile_nav{
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  padding:0.5rem 0rem;
+}
+
+.mobile_nav ul{
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+
+.mobile_nav ul li {
+  padding: 0rem 0.5rem;
+}
+
+.banner_content {
+  position: absolute;
+  top: 4.2rem;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  text-align: center;
+}
+
+.banner_content .main{
+  position: absolute;
+  top: 0rem;
+  left: 0;
+  /* bottom: 0; */
+  right: 0;
+  text-align: center;
+  height: 31rem;
+  width: 120vw;
+  background-color: rgba(7, 58, 7, 0.397);
+}
+
+.banner_content h3{
+  font-family: 'Pacifico', cursive;
+  color: #ffff;
+  font-size: 34px;
+  padding-top: 4rem;
+}
+
+.banner_content h2{
+  font-family: 'Bebas Neue', sans-serif;
+  color: #ffff;
+  font-size: 44px;
+  color: green;
+}
+.button_container {
+  display: grid;
+  grid-template-columns: 40% 50%;
+  grid-gap: 1rem;
+  padding-left: 1.2rem;
+}
+.button_container button{
+  padding: 1.5rem 2rem;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+
+}
 
 
-  #mobile_banner #desk_banner_img{
-    height: 100vh;
-  }
+.button_container .started{
+  background-color: rgb(8, 71, 8)
+}
 
-  #mobile_banner .content h3{
-    font-family: 'Pacifico', cursive;
-    text-align: center;
-    padding-top: 20rem;
-    margin-bottom: 0;
-  }
-  
-  #mobile_banner .content h3{
-    text-align: center;
-    color: green;
-    font-size: 28px;
-  }
-  #mobile_banner .content h2{
-    text-align: center;
-    color:orangered;
-  }
+
+.button_container .request{
+  background-color: rgb(95, 30, 7);
+}
+
+.banner_content section {
+  /* margin-top: 80rem; */
+  text-align: center;
+  padding-left: 3rem;
+}
+
 }
 
 /* Tablet and Smaller Desktop */
